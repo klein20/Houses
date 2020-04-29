@@ -1,0 +1,28 @@
+$black: #0d0d0d;
+$white: #ffffff;
+$text: #284157;
+
+
+@mixin f500{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+@mixin f700{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+@mixin button {
+    background: linear-gradient(to right, #fb2b2b, #f86c26);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+}
+@mixin header {
+    font-size: 30px;
+    font-family: "Geometria-Bold";
+    text-align: center;
+    padding: 90px 0 60px 0;
+    line-height: 35px;
+}

@@ -1,0 +1,65 @@
+@import 'vars';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Geometria-Medium";
+  font-size: 14px;
+  line-height: 24px;
+  color: $text;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.h2__header {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+p,h1,h2,h3,h4 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+input[type].error { 
+  border: 2px solid red;
+}
+.clearfix:after { 
+  content: "";
+  display: block;
+  clear: both;
+}
+

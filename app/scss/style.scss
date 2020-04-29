@@ -1,0 +1,549 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+.logo {
+    display: block;
+}
+.header {
+    font-size: 12px;
+    line-height: 19px;
+    color: $text;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    &__schedule {
+        margin-left: 30px;
+    }
+    &__schedule__text {
+        line-height: 19px;
+        position: relative;
+        text-align: right;
+        span {
+            font-family: "Geometria-Bold";
+        }
+        &::after {
+            content: url(../images/icon_clock.png);
+            margin-left: 25px;
+            position: absolute;
+            bottom: 5px;  
+        }
+    }
+    &__call__wrap {
+        float: left;
+    }
+    &__call__number {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__call__btn {
+        @include button;
+        height: 50px;
+        width: 170px;
+        margin-left: 30px;
+        float: right;
+    }
+}
+.first-page {
+    background: url(../images/main_bg.jpg) no-repeat center center / cover;
+    height: 600px;
+    &__about {
+        font-family: "Geometria-Bold";
+        font-size: 36px;
+        color: white;
+        float: left;
+        padding-top: 70px;
+        h3 {
+            font-size: 36px;
+        }
+        &__text {
+            width: 320px;
+            font-size: 18px;
+            font-family: "Geometria-Medium";
+            line-height: 26px;
+            padding: 40px 0;
+        }
+        &__text2 {
+            font-size: 16px;
+            font-family: "Geometria";
+            line-height: 24px;
+            display: inline-block;
+        }
+        &__list {
+            font-size: 14px;
+            display: flex;
+            margin-top: 200px;
+            li {
+                width: 105px;
+                font-family: "Geometria-Medium";
+                margin-right: 100px;
+                span {
+                    font-size: 12px;
+                    font-family: "Geometria";
+                }
+            }
+        }
+    }
+    &__form {
+        font-size: 16px;
+        font-family: "Geometria-Medium";
+        background: white;
+        text-align: center;
+        margin-top: 90px;
+        float: right;
+        width: 370px;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        &__wrap {
+            width: 210px;
+            display: inline-block;
+            margin: 80px 0;
+        }
+        &__input {
+            font-size: 12px;
+            text-align: center;
+            color: #000000;
+            opacity: 0.5;
+            padding: 17px 0;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            border: 1px solid #dcdcdc;
+        }
+        &__btn {
+            font-size: 13px;
+            font-family: "Geometria-Medium";
+            height: 50px;
+            width: 190px;
+            margin-top: 5px;
+            @include button;
+        }
+    }
+}
+.ready-projects {
+    text-align: center;
+    &__header {
+        @include header;
+    }
+    &__list {
+        margin-bottom: 60px;
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 25px;
+
+    }
+    &__input { 
+        display: none; 
+    }
+    &__link {
+        font-size: 18px;
+        padding: 7px 12px 7px 13px;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        &:hover {
+            border: 2px solid $text;
+            border-radius: 4px;
+            transition: all 0s;
+        }
+    }
+    &__choose-item {
+        width: 370px;
+        
+        img {
+            display: block;
+        }
+    }
+    &__choose-header {
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 0 25px 0;
+    }
+    &__choose-list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__choose-text {
+        border-left: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    &__choose-parameters {
+        display: block;
+        margin: 0 auto;
+    }
+    &__choose-btn {
+        @include button;
+        height: 60px;
+        width: 210px;
+        margin: 30px 0;
+    }
+} 
+
+
+.ready-projects__choose-list {
+  display: none;
+}
+.ready-projects__item label {
+  display: inline-block;
+}
+#tabRb1:checked ~ #tab1,
+#tabRb2:checked ~ #tab2,
+#tabRb3:checked ~ #tab3 {
+  display: flex;
+}
+
+.individual-projects {
+   background: url(../images/bg_2.jpg) no-repeat center center / cover;
+   padding-bottom: 115px;
+
+    .container {
+        position: relative;
+    }
+    &__header {
+        @include header;
+        width: 775px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-size: 20px;
+        font-family: "Geometria";
+        text-align: center;
+    }
+    &__list {
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-bran {
+        position: absolute;
+        left: 30%;
+    }
+}
+.house {
+    &__header {
+        @include header;
+        width: 750px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-size: 20px;
+        font-family: "Geometria";
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+    }
+    &__img {
+        margin: 80px auto 150px auto;
+        display: block;
+    }
+}
+.materials {
+    background: #284157;
+    color: white;
+    &__header {
+        @include header;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__text {
+        font-size: 14px;
+        font-family: "Geometria-Medium";
+        text-transform: uppercase;
+        padding: 14px 0;   
+    }
+    &__more {
+        font-family: "Geometria";
+        text-decoration: underline;
+        padding-bottom: 100px;
+    }
+}
+.advantages {
+    background: url(../images/bg_3.jpg) no-repeat center right / cover;
+    display: block;
+    padding-bottom: 160px;
+    .container {
+        position: relative;
+    }
+    &__img-branch {
+        position: absolute;
+    }
+    &__header {
+        @include header;
+    }
+    &__list {
+        margin: 0 auto;
+        display: inline-block;
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__img {
+        float: left;
+    }
+    &__wrap {
+        float: right;
+        padding-left: 30px;
+    }
+    &__text {
+        font-size: 18px;
+        font-family: "Geometria-Medium";
+        width: 470px;
+        padding-bottom: 23px;
+    }
+    &__text2 {
+        font-family: "Geometria";
+    }
+}
+.ceo {
+    padding-bottom: 100px;
+    &__header {
+        @include header;
+    }
+    &__video {
+        position: relative;
+        //float: left;
+        display: inline-block;
+    }
+    &__img {
+        z-index: 10;
+        position: relative;
+    }
+    &__branch {
+        position: absolute;
+        right: -110px;
+    }
+    &__about {
+       //float: right;
+       padding-left: 110px;
+       display: inline-block;
+        &-header {
+            font-size: 20px;
+            font-family: "Geometria-Bold";
+        }
+    }
+    &__text {
+        font-size: 16px;
+        width: 200px;
+    }
+    &__text2 {
+        font-size: 16px;
+        width: 260px;
+        padding: 78px 0 25px 0;
+    }
+    &__number {
+        font-size: 18px;
+    }
+}
+.k-persons {
+    background: #ebf3fa;
+    text-align: center;
+    padding-bottom: 100px;
+    &__header {
+        @include header;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name {
+        font-size: 18px;
+        font-family: "Geometria-Bold";
+        padding: 10px 0 15px 0;
+    }
+    &__pos {
+        font-family: "Geometria";
+        margin-bottom: 30px;
+    }
+    &__img {
+        border: 17px solid #f3c399;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    &__about {
+        width: 95%;
+        position: relative;
+        background: white;
+        padding: 20px 20px 10px 20px;
+        border-radius: 10px;
+        &::after {
+            content: ''; 
+            position: absolute; 
+            left: 46%; top: -28px; 
+            border: 14px solid transparent; 
+            border-bottom: 14px solid white;
+           }
+    }
+    &__text {
+        font-family: "Geometria";
+        padding-bottom: 10px;
+    }
+}
+.issues {
+    background: url(../images/bg_4.jpg) no-repeat center center;
+    color: white;
+    height: 748px;
+    &__header {
+        @include header;
+    }
+    &__text {
+        font-size: 20px;
+        font-family: "Geometria";
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    &__list {
+        width: 55%;
+    }
+    &__item {
+        padding-bottom: 25px;
+        display: block;
+        a {
+            font-size: 16px;
+            font-family: "Geometria";
+            text-decoration: underline;
+        }
+    }
+}
+.issues {
+    counter-reset: li; 
+    list-style: none; 
+    font-family: "Geometria";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em 2em;
+            border-radius: .3em;
+            transition: .3s ease-out;
+        }
+    } 
+.issues a:hover:before {
+    transform: rotate(360deg);
+}
+.issues a::before {
+content: counter(li) ".";
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 65%;
+    margin-top: -1.3em;
+    background: transparent;
+    height: 2em;
+    width: 2em;
+    line-height: 28px;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+.form {
+    &__form {
+        width: 100%;
+        background: white;
+        padding: 70px 85px 45px 85px;
+        &__text {
+            font-size: 22px;
+            font-family: "Geometria-Bold";
+            text-align: left; 
+            padding-bottom: 45px;
+        }
+        &__descr {
+            font-size: 16px;
+            font-family: "Geometria";
+            margin-bottom: 45px;
+            display: inline-block;
+        }
+    }
+    &__label {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input,
+    &__btn {
+        width: 31%;
+        height: 60px;
+        border: none;
+        border-radius: 8px;
+    }
+    &__input {
+        border: 1px solid #e8e8e8;
+        padding: 20px;
+    }
+    &__btn {
+        @include button;
+    }
+    &__call {
+        font-family: "Geomatria";
+        padding-top: 40px;
+        a {
+            font-family: "Geometria-Bold";
+        }
+    }
+}
+.footer {
+    background: #ebf3fa;
+    font-family: "Geometria";
+    &__logo {
+        padding: 30px 0 26px 0;
+    }
+    &__card {
+        display: inline-block;
+    }
+    &__content {
+        display: inline-block;
+        padding-left: 100px;
+    }
+    &__header {
+        font-size: 22px;
+        font-family: "Geometria-Bold";
+        padding-bottom: 45px;
+    }
+    &__text {
+        font-size: 16px;
+        padding-bottom: 45px;
+    }
+    &__loc {
+        width: 215px;
+        position: relative;
+        padding: 0 0 45px 50px;
+        &::before {
+            content: url(../images/icon_location.png);
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+    }
+    &__number {
+        width: 210px;
+        position: relative;
+        padding: 0 0 45px 50px;
+        &::before {
+            content: url(../images/icon_call.png);
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+        a {
+            font-family: "Geometria-Bold";
+        }
+    }
+    &__time {
+        width: 155px;
+        position: relative;
+        padding: 0 0 45px 50px;
+        &::before {
+            content: url(../images/icon_clock.png);
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+    }
+}

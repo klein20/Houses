@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ДомаНавека</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <div class="header__schedule">
+                    <p class="header__schedule__text"><span>с 9:00 до 21:00 <br></span> без выходных</p>
+                </div>
+                <div class="header__call">
+                    <div class="header__call__wrap">
+                        <p class="header__call__text">Есть вопросы? Звоните!</p>
+                        <span class="header__call__number"><a href="tel:+74952042376">+7 (495) 204-23-76</a></span>
+                    </div>
+                    <button class="header__call__btn">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="first-page">
+        <div class="container">
+            <div class="first__page__wrap clearfix">
+                <div class="first-page__about">
+                    <h3>Строим Дома</h3>
+                    <p class="first-page__about__text">из бетона, кирпича, поризованных блоков и пеноблоков</p>
+                    <span class="first-page__about__text2">в Москве и МО <br> с гарантией 20 лет</span>
+                    <ul class="first-page__about__list">
+                        <li>У нас 7 бригад строителей</li>
+                        <li>Опыт работы 19 лет</li>
+                        <li>Создаем дома "под ключ",
+                            <span>реконструируем или достраиваем</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="first-page__form">
+                    <form>
+                        <div class="first-page__form__wrap">
+                            <p class="first-page__form__text">
+                                Бесплатно составим смету на строительство вашего дома уже сегодня!
+                            </p>
+                            <label>
+                                <input class="first-page__form__input" type="text" placeholder="Ваше имя">
+                                <input class="first-page__form__input" type="text" placeholder="Ваш телефон">
+                            </label>
+                            <button class="first-page__form__btn">Заказать смету
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ready-projects">
+        <div class="container">
+            <h4 class="ready-projects__header">У нас есть уже готовые проекты</h4>
+            <input class="ready-projects__input"  type="radio" name="tab-rb" id="tabRb1" checked>
+            <input class="ready-projects__input" type="radio" name="tab-rb" id="tabRb2">
+            <input class="ready-projects__input" type="radio" name="tab-rb" id="tabRb3">
+            <ul class="ready-projects__list">
+                <li class="ready-projects__item">
+                    <label class="ready-projects__link" for="tabRb1">Эконом</label>
+                </li>
+                <li class="ready-projects__item">
+                    <label class="ready-projects__link" for="tabRb2">Средний</label>
+                </li>
+                <li class="ready-projects__item">
+                    <label class="ready-projects__link" for="tabRb3">Премиум</label>
+                </li>
+            </ul>
+                <ul class="ready-projects__choose-list" id="tab1">
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project1.jpg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 1</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 102 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project2.jpg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 1</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 102 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project3.jpeg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 1</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 102 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="ready-projects__choose-list" id="tab2">
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project2.jpg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 2</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 102 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project3.jpeg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 2</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 102 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project1.jpg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 2</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 102 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="ready-projects__choose-list" id="tab3">
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project3.jpeg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 3</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 145 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project1.jpg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 3</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 118 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                    <li class="ready-projects__choose-item">
+                        <img src="./images/img_project2.jpg" alt="project image 1">
+                        <div class="ready-projects__choose-text">
+                            <h4 class="ready-projects__choose-header">Проект Дома Навека 3</h4>
+                            <span class="ready-projects__choose-parameters">Площадь: 102 м2</span>
+                            <span class="ready-projects__choose-parameters">Размеры: 10х23х5</span>
+                            <button class="ready-projects__choose-btn">Подробнее о проекте</button>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <section class="individual-projects">
+        <div class="container">
+            <img class="individual-projects__img-bran" src="./images/img_branches.png" alt="branches">
+            <h4 class="individual-projects__header">Мы построим Вам дом по индивидуальному
+             плану разработанному в нашем проектном бюро
+            </h4>
+            <p class="individual-projects__text">За 19 лет мы разработали более 500 индивидуальных проектов
+            </p>
+            <ul class="individual-projects__list">
+                <li class="individual-projects__item">
+                    <img src="./images/img_individual-1.jpg" alt="individual project 1">
+                    <div class="individual-projects__green"></div>
+                </li>
+                <li class="individual-projects__item">
+                    <img src="./images/img_individual-2.jpg" alt="individual project 2">
+                </li>
+                <li class="individual-projects__item">
+                    <img src="./images/img_individual-3.jpg" alt="individual project 3">
+                </li>
+            </ul>
+            <p class="individual-projects__text">Мы разрабатываем оригинальные,конструктивно сложные проекты и реализуем их
+            </p>
+            <ul class="individual-projects__list">
+                <li class="individual-projects__item">
+                    <img src="./images/img_individual-4.jpg" alt="individual project 4">
+                </li>
+                <li class="individual-projects__item">
+                    <img src="./images/img_individual-5.jpg" alt="individual project 5">
+                </li>
+                <li class="individual-projects__item">
+                    <img src="./images/img_individual-6.jpg" alt="individual project 6">
+                </li>
+            </ul>
+            <form class="form__form">
+                <h4 class="form__form__text">Мы готовы разработать для Вас индивидуальный проект дома по Вашим 
+                    пожеланиям Либо использовать для строительства Ваш собственный проект
+                </h4>
+                <span class="form__form__descr">Заполните форму ниже - мы свяжемся с Вами для 
+                    обсуждения деталей проекта
+                </span>
+                <label class="form__label">
+                    <input placeholder="Ваше Имя" class="form__input" type="text">
+                    <input placeholder="Ваш телефон" class="form__input" type="text">
+                    <button class="form__btn">Заказать <br> обратный звонок</button>
+                </label>
+            </form>
+        </div>
+    </section>
+    <section class="house">
+        <div class="container">
+            <h4 class="house__header">Гарантия 20 лет на качество строительства дома прописана в договоре</h4>
+            <p class="house__text">Мы контролируем процесс строительства на каждом этапе 
+                от его начала до момента сдачи объекта заказчику
+            </p>
+            <img class="house__img" src="./images/img_house.jpg" alt="">
+        </div>
+    </section>
+    <section class="materials">
+        <div class="container">
+            <h4 class="materials__header">Мы построим для Вас дом <br>
+                из выбранного Вами материала
+            </h4>
+            <ul class="materials__list">
+                <li class="materials__item">
+                    <img src="./images/img_material-1.jpg" alt="material 1">
+                    <p class="materials__text">из бетона
+                    </p>
+                    <a href="#" class="materials__more">Подробнее</a>
+                </li>
+                <li class="materials__item">
+                    <img src="./images/img_material-2.jpg" alt="material 2">
+                    <p class="materials__text">из кирпича
+                    </p>
+                    <a href="#" class="materials__more">Подробнее</a>
+                </li>
+                <li class="materials__item">
+                    <img src="./images/img_material-3.jpg" alt="material 3">
+                    <p class="materials__text">из поризованных блоков
+                    </p>
+                    <a href="#" class="materials__more">Подробнее</a>
+                </li>
+                <li class="materials__item">
+                    <img src="./images/img_material-4.jpg" alt="material 4">
+                    <p class="materials__text">пеноблоков
+                    </p>
+                    <a href="#" class="materials__more">Подробнее</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <setion class="advantages">
+        <div class="container">
+            <img class="advantages__img-branch" src="./images/img_branches-2.png" alt="img branches">
+            <h4 class="advantages__header">Мы всегда укладываемся в сроки <br>
+                прописанные в договоре на строительство
+            </h4>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <img class="advantages__img" src="./images/img_technique.png" alt="img technique">
+                    <div class="advantages__wrap">
+                        <p class="advantages__text">
+                            Мы используем современную технику и инструмент при производстве работ
+                        </p>
+                        <p class="advantages__text2">
+                            Это в разы сокращает сроки строительства
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <img class="advantages__img" src="./images/img_worker.png" alt="img worker">
+                    <div class="advantages__wrap">
+                        <p class="advantages__text">
+                            У нас в штате 7 бригад опытных специалистов своего дела
+                        </p>
+                        <p class="advantages__text2">
+                            Отдел технического контроля нашей компании проверяет каждый этап строительства
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <img class="advantages__img" src="./images/img_documents.png" alt="img documents">
+                    <div class="advantages__wrap">
+                        <p class="advantages__text">
+                            Отдел технического контроля нашей компании проверяет каждый этап строительства
+                        </p>
+                        <p class="advantages__text2">
+                            Это позволяет исключить производственный брак на каждом этапе строительства
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </setion>
+    <section class="ceo">
+        <div class="container clearfix">
+            <h4 class="ceo__header">
+                Все сотрудники в нашем штате <br> имеют высшее инженерно-строительное образование
+            </h4>
+            <div class="ceo__video">
+                <img class="ceo__img" src="./images/img_ceo.jpg" alt="img ceo">
+                <img class="ceo__branch" src="./images/img_brances-3.jpg" alt="img branches">
+            </div>
+            <div class="ceo__about">
+                <h4 class="ceo__about-header">Евтушенко Дмитрий
+                </h4>
+                <p class="ceo__text">
+                    Генеральный директор ООО "Дома Навека"
+                </p>
+                <p class="ceo__text2">
+                    Вы можете напрямую связаться с директором по телефону:
+                </p>
+                <a href="tel:+74952042376" class="ceo__number">+7 (495) 204-23-76</a>
+            </div>
+        </div>
+    </section>
+    <section class="k-persons">
+        <div class="container">
+            <h4 class="k-persons__header">
+                Ключевые лица нашей компании
+            </h4>
+            <ul class="k-persons__list">
+                <li class="k-persond__item">
+                    <img class="k-persons__img" src="./images/img_employees.png" alt="engineer 1">
+                    <h3 class="k-persons__name">Григорян Алексей</h3>
+                    <p class="k-persons__pos">Главный инженер</p>
+                    <div class="k-persons__about">
+                    <p class="k-persons__text">Образование - БГТУ.</p>
+                    <p class="k-persons__text">Стаж с 2004 года.</p>
+                    <p class="k-persons__text">Принимал участие в проектировании и монтаже более 200 объектов в России и за рубежом.
+                    </p>
+                    <p class="k-persons__text">Внештатный консультант пяти действующих строительных компаний Москвы</p>
+                    </div>
+                </li>
+                <li class="k-persond__item">
+                    <img class="k-persons__img" src="./images/img_employees.png" alt="engineer 1">
+                    <h3 class="k-persons__name">Григорян Алексей</h3>
+                    <p class="k-persons__pos">Главный инженер</p>
+                    <div class="k-persons__about">
+                    <p class="k-persons__text">Образование - БГТУ.</p>
+                    <p class="k-persons__text">Стаж с 2004 года.</p>
+                    <p class="k-persons__text">Принимал участие в проектировании и монтаже более 200 объектов в России и за рубежом.
+                    </p>
+                    <p class="k-persons__text">Внештатный консультант пяти действующих строительных компаний Москвы</p>
+                    </div>
+                </li>
+                <li class="k-persond__item">
+                    <img class="k-persons__img" src="./images/img_employees.png" alt="engineer 1">
+                    <h3 class="k-persons__name">Григорян Алексей</h3>
+                    <p class="k-persons__pos">Главный инженер</p>
+                    <div class="k-persons__about">
+                    <p class="k-persons__text">Образование - БГТУ.</p>
+                    <p class="k-persons__text">Стаж с 2004 года.</p>
+                    <p class="k-persons__text">Принимал участие в проектировании и монтаже более 200 объектов в России и за рубежом.
+                    </p>
+                    <p class="k-persons__text">Внештатный консультант пяти действующих строительных компаний Москвы</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="issues">
+        <div class="container">
+            <h2 class="issues__header">Часто задаваемые вопросы</h2>
+            <p class="issues__text">На Ваши вопросы ответит Евтушенко Дмитрий    
+            </p>
+            <ol class="issues__list">
+                <li class="issues__item">
+                    <a href="#">Как заказать деталь правильно?</a>
+                </li>
+                <li class="issues__item">
+                    <a href="#">Что делать, если запчасть не понадобилась?</a>
+                </li>
+                <li class="issues__item">
+                    <a href="#">Как долго доставляется деталь?</a>
+                </li>
+                <li class="issues__item">
+                    <a href="#">Можете ли Вы установить деталь?</a>
+                </li>
+                <li class="issues__item">
+                    <a href="#">Какой транспортной компанией доставляется деталь?</a>
+                </li>
+                <li class="issues__item">
+                    <a href="#">Как долго доставляется деталь?</a>
+                </li>
+                <li class="issues__item">
+                    <a href="#">Что делать, если запчасть не понадобилась?</a>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <div class="container">
+        <form class="form__form">
+            <h4 class="form__form__text">Вы не нашли ответа на свой вопрос? Наши специалисты дадут 
+                Вам профессиональную консультацию абсолютно бесплатно!
+            </h4>
+            <span class="form__form__descr">Для этого оставьте свой номер телефона в форме ниже - мы перезвоним
+            Вам в течение 3 минут
+            </span>
+            <label class="form__label">
+                <input placeholder="Ваше Имя" class="form__input" type="text">
+                <input placeholder="Ваш телефон" class="form__input" type="text">
+                <button class="form__btn">Получить бесплатную <br> консультацию</button>
+            </label>
+            <p class="form__call">Или Вы можете перезвонить нам сами по телефону:
+                <a href="tel:+74952042376">+7 (495) 204-23-76</a>   
+            </p>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <iframe class="footer__card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.194568961436!2d37.
+            40845662805644!3d55.687296370096355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5477f24be1437%3A0x9db5ab701ca9ff79!
+            2z0K3Qu9C40YLQodGC0YDQvtC5INC80LDRgtC10YDQuNCw0LvRiw!5e0!3m2!1sru!2sua!4v1578561200974!5m2!1sru!2sua" 
+            width="50%" height="540" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="footer__content">
+                <h3 class="footer__header">
+                    Мы можем показать Вам <br> еще больше проектов у нас в офисе!
+                </h3>
+                <p class="footer__text">Приезжайте к нам в гости по адресу:
+                </p>
+                <p class="footer__loc">МКАД 51 км. ТВК <br> “Элит Строй Материалы” павильон L23</p>
+                <p class="footer__number">Звоните прямо сейчас: <a href="tel:+74952042376">+7 (495) 204-23-76</a></p>
+                <p class="footer__time">с 9:00 до 21:00 без выходных</p>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__logo">
+        <div class="container">
+            <a href="#">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>
